@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
-
+import {BrowserRouter} from 'react-router-dom';
 // const get_current_date = () =>{
 //   const date=new Date();
 //   return date.toDateString();
@@ -20,7 +20,7 @@ import * as serviceWorker from './serviceWorker';
 
 
 // axtual syntax
-ReactDOM.render(<React.StrictMode><App /></React.StrictMode>,document.getElementById('root'));
+ReactDOM.render(<BrowserRouter><React.StrictMode><App /></React.StrictMode></BrowserRouter>,document.getElementById('root'));
 
 
 // If you want your app to work offline and load faster, you can change
